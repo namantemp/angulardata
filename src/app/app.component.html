@@ -1,0 +1,10 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+    	<app-header></app-header>
+			<!--Values transferred to Siblings-->
+			<app-searchnews (childEvent)="newsdata($event)"></app-searchnews>
+			<app-searchlist *ngIf="data" [inputdata]= "data"></app-searchlist>
+    </div>
+  </div>
+</div>    

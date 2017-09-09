@@ -1,0 +1,15 @@
+<p>
+  updatefav works!
+</p>
+<div class="container">
+  <div class="row">
+      	<div class="col-md-3" >
+      	<p><input [(ngModel)]="inputdata.title"></p>
+      	</div>
+				<div class="col-md-3"><img src="{{inputdata.urlToImage}}" width="80%" height="150px" alt="Image"></div>
+				<div class="col-md-3">{{inputdata.description}}</div>
+				<div class="col-md-3">{{inputdata.author}}</div>
+  </div>
+  <button class="updatebtn" (click)=updatefav(inputdata)>Update</button>	
+  <hr>
+</div>
